@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Página-1" id="_e6Pj8eibGBosAIFMwih">
+    <mxGraphModel dx="1767" dy="1027" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-23" edge="1" parent="1" source="VasXK6VfG2nzAFPXUX2H-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VasXK6VfG2nzAFPXUX2H-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;align=left;" value="&lt;ul&gt;&lt;li&gt;MOSTRAR &quot;Ingrese el primer número:&quot;&lt;/li&gt;&lt;li&gt;&amp;nbsp;PEDIR num1&lt;/li&gt;&lt;li&gt;&amp;nbsp;MOSTRAR &quot;Ingrese el segundo número:&quot;&lt;/li&gt;&lt;li&gt;&amp;nbsp;PEDIR num2&lt;/li&gt;&lt;li&gt;&amp;nbsp;MOSTRAR &quot;Ingrese el tercer número:&quot;&lt;/li&gt;&lt;li&gt;&amp;nbsp;PEDIR num3&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="121" width="279" x="461" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-27" edge="1" parent="1" source="VasXK6VfG2nzAFPXUX2H-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="VasXK6VfG2nzAFPXUX2H-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-28" edge="1" parent="1" source="VasXK6VfG2nzAFPXUX2H-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="VasXK6VfG2nzAFPXUX2H-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-3" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;" value="num1 == 30 OR&amp;nbsp;num2 == 30 OR&amp;nbsp;num3 == 30 OR suma_total == 30" vertex="1">
+          <mxGeometry height="235" width="297" x="451" y="579" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="86" width="231" x="481" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-5" edge="1" parent="1" source="VasXK6VfG2nzAFPXUX2H-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VasXK6VfG2nzAFPXUX2H-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="" vertex="1">
+          <mxGeometry height="36" width="120" x="537.5" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="" vertex="1">
+          <mxGeometry height="36" width="120" x="485" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Inicio" vertex="1">
+          <mxGeometry height="30" width="60" x="564.5" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Fin" vertex="1">
+          <mxGeometry height="30" width="60" x="517.5" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-10" edge="1" parent="1" source="VasXK6VfG2nzAFPXUX2H-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VasXK6VfG2nzAFPXUX2H-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=12;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;DEFINIR num1&lt;/li&gt;&lt;li&gt;DEFINIR num2&lt;/li&gt;&lt;li&gt;DEFINIR num3&lt;/li&gt;&lt;li&gt;DEFINIR suma_total&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="87" width="232" x="485" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-12" edge="1" parent="1" source="VasXK6VfG2nzAFPXUX2H-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VasXK6VfG2nzAFPXUX2H-9" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="721" y="983" />
+              <mxPoint x="721" y="983" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-13" parent="1" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;size=7.556888355928265;align=left;fontSize=12;" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;ul&gt;&lt;li&gt;MOSTRAR &quot;Incorrecto&quot;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;" vertex="1">
+          <mxGeometry height="132" width="281" x="756" y="776" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="si" vertex="1">
+          <mxGeometry height="30" width="60" x="384" y="661" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="no" vertex="1">
+          <mxGeometry height="30" width="60" x="765" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="86" width="231" x="476.5" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-24" edge="1" parent="1" source="VasXK6VfG2nzAFPXUX2H-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="VasXK6VfG2nzAFPXUX2H-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600.25" y="640.4743576049805" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=12;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;suma_total = num1 + num2 + num3&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="87" width="239.5" x="480.5" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-29" edge="1" parent="1" source="VasXK6VfG2nzAFPXUX2H-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="306" y="984" />
+            </Array>
+            <mxPoint x="547.1903533935547" y="983.9288864135742" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VasXK6VfG2nzAFPXUX2H-26" parent="1" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;size=7.556888355928265;align=left;fontSize=12;" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;ul&gt;&lt;li&gt;MOSTRAR &quot;Correcto&quot;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;" vertex="1">
+          <mxGeometry height="132" width="281" x="144" y="753" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
