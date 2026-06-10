@@ -9,14 +9,14 @@ def write_file(text, path):
 
 def main():
     songs = []
-    lines = read_file_lines(r'C:\Users\joseh\Downloads\Lyfter\python begin\songs.txt')
+    lines = read_file_lines(r'python begin\songs.txt')
     
     for line in lines:
         song = line.strip()
         songs.append(song)
     
     sorted_songs = sorted(songs)
-    write_file(sorted_songs, r'C:\Users\joseh\Downloads\Lyfter\python begin\sorted_songs.txt')
+    write_file(sorted_songs, r'python begin\sorted_songs.txt')
 
 
 if __name__ == "__main__":
