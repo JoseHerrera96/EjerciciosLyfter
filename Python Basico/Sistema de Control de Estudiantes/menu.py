@@ -1,7 +1,7 @@
 from actions import add_student, print_all_students, print_top_3_students, print_average_score_of_each_student
 from data import write_csv_memory
 
-def menu(students, headers):
+def menu(students):
     
     while True:
         
@@ -17,7 +17,7 @@ def menu(students, headers):
         try:
             option = int(input("Enter your choice: "))
             if option == 1:
-                students, headers = add_student(students, headers)
+                students = add_student(students)
             elif option == 2:
                 print_all_students(students)
             elif option == 3:
@@ -26,7 +26,7 @@ def menu(students, headers):
                 print_average_score_of_each_student(students)
             elif option == 5:
                 try:
-                    write_csv_memory("students.csv", students, headers)
+                    write_csv_memory("students.csv", students)
                 except Exception as e:
                     print(f"Failed to save data: {str(e)}")
                 print("Data saved successfully.")

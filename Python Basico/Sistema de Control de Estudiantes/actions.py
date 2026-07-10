@@ -17,7 +17,7 @@ def calculate_average_score(student_data):
     except ValueError as ve:
         raise ValueError(f"Invalid score value: {ve}")
 
-def add_student(students, headers):
+def add_student(students):
     print("Add student")
     try:
         Name = input("Enter student name: ")
@@ -60,7 +60,7 @@ def add_student(students, headers):
     except Exception as e:
         print(f"Unexpected error adding student: {e}")
     print(" ")
-    return students, headers
+    return students
 
 def print_all_students(students):
     print("All students:")

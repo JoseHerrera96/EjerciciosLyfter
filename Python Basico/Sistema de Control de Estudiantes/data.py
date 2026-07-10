@@ -1,16 +1,27 @@
 import csv
 from typing import Any
+import os
+
+def get_script_dir():
+    return os.path.dirname(os.path.abspath(__file__))
 
 def read_csv_memory(path):
+    full_path = os.path.join(get_script_dir(), path)
     students = {}
     headers = ["section", "spanish", "english", "history", "science"]
     try:
-        with open(path, 'r', encoding='utf-8') as csvfile:
+        with open(full_path, 'r', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 if 'Name' not in row:
                     raise KeyError("CSV is missing required 'Name' column")
                 name = row.pop('Name')
+                # Convert average_score to float if it exists
+                if 'average_score' in row:
+                    try:
+                        row['average_score'] = float(row['average_score'])
+                    except ValueError:
+                        pass  # Keep as string if conversion fails
                 students[name] = row
             if reader.fieldnames:
                 headers = [h for h in reader.fieldnames if h != 'Name']
@@ -26,36 +37,15 @@ def read_csv_memory(path):
         print(f"Unexpected error reading file: {e}")
     return students, headers
 
-def write_csv_memory(path, students, headers):
-    # Define base columns in desired order
-    base_columns = ["section", "spanish", "english", "history", "science"]
-    
-    # Collect all unique keys from student data
-    all_keys = set()
-    for data in students.values():
-        all_keys.update(data.keys())
-    
-    # Build ordered column list: start with base columns, then add any extra keys, then average_score at the en
-    ordered_columns = []
-    # Add base columns that exist in our data
-    for col in base_columns:
-        if col in all_keys:
-            ordered_columns.append(col)
-            all_keys.remove(col)
-    
-    # Add any remaining columns except average_score
-    for col in all_keys:
-        if col != "average_score":
-            ordered_columns.append(col)
-    
-    # Add average_score at the end if it exists
-    if "average_score" in all_keys or any("average_score" in data for data in students.values()):
-        ordered_columns.append("average_score")
+def write_csv_memory(path, students):
+    full_path = os.path.join(get_script_dir(), path)
+    # Define fixed columns in desired order
+    ordered_columns = ["section", "spanish", "english", "history", "science", "average_score"]
     
     fieldnames = ['Name'] + ordered_columns
     
     try:
-        with open(path, 'w', newline='', encoding='utf-8') as csvfile:
+        with open(full_path, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames, extrasaction='ignore')
             writer.writeheader()
             for name, data in students.items():
