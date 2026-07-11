@@ -1,0 +1,83 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Página-1" id="IQrJuiC0afK7KuW3lYJp">
+    <mxGraphModel dx="1546" dy="899" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-33" edge="1" parent="1" source="xnviSoZzk3e7yfGcmPtB-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xnviSoZzk3e7yfGcmPtB-32" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=13;align=left;" value="&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;MOSTRAR &quot;Por favor, ingrese un número entero positivo:&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;PEDIR numero_limite&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="113" width="249" x="398" y="243" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-35" edge="1" parent="1" source="xnviSoZzk3e7yfGcmPtB-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="237" y="635" />
+              <mxPoint x="237" y="382" />
+            </Array>
+            <mxPoint x="525" y="382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-36" edge="1" parent="1" source="xnviSoZzk3e7yfGcmPtB-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xnviSoZzk3e7yfGcmPtB-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="645" y="635" />
+              <mxPoint x="645" y="847" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-5" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;" value="contador &amp;lt;= numero_limite" vertex="1">
+          <mxGeometry height="156" width="180" x="432" y="557" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="112" width="231" x="403" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-9" edge="1" parent="1" source="xnviSoZzk3e7yfGcmPtB-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xnviSoZzk3e7yfGcmPtB-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="" vertex="1">
+          <mxGeometry height="36" width="120" x="459.5" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="" vertex="1">
+          <mxGeometry height="36" width="120" x="580.5" y="963" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Inicio" vertex="1">
+          <mxGeometry height="30" width="60" x="486.5" y="37" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Fin" vertex="1">
+          <mxGeometry height="30" width="60" x="613" y="963" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-30" edge="1" parent="1" source="xnviSoZzk3e7yfGcmPtB-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xnviSoZzk3e7yfGcmPtB-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=12;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;DEFINIR numero_limite&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;DEFINIR contador&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;DEFINIR suma_total&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/li&gt;&lt;li&gt;contador = 1&lt;/li&gt;&lt;li&gt;suma_total = 0&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="232" x="407" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-38" edge="1" parent="1" source="xnviSoZzk3e7yfGcmPtB-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xnviSoZzk3e7yfGcmPtB-13" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="643" y="913" />
+              <mxPoint x="643" y="913" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-17" parent="1" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;size=7.556888355928265;align=left;fontSize=12;" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;MOSTRAR &quot;---&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;MOSTRAR &quot;La suma de los números desde 1 hasta&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;MOSTRAR numero_limite&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;MOSTRAR &quot;es:&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&amp;nbsp;MOSTRAR suma_total&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;" vertex="1">
+          <mxGeometry height="132" width="395" x="447" y="766" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="si" vertex="1">
+          <mxGeometry height="30" width="60" x="372" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="no" vertex="1">
+          <mxGeometry height="30" width="60" x="617" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-34" edge="1" parent="1" source="xnviSoZzk3e7yfGcmPtB-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xnviSoZzk3e7yfGcmPtB-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xnviSoZzk3e7yfGcmPtB-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;ul style=&quot;text-align: left;&quot;&gt;&lt;li&gt;suma_total = suma_total + contador&lt;/li&gt;&lt;li&gt;contador = contador + 1&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="88" width="271" x="387" y="425" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

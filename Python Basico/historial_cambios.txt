@@ -1,0 +1,15 @@
+PS C:\Users\joseh\Downloads\Github\EjerciciosLyfter> git log
+
+#uploading all files related to the first wave of exercises.
+commit 40eed206f9d32ce83d650329e56795da9b2569bf (HEAD -> ejercicios-listos, origin/ejercicios-listos)
+Author: Jose Herrera <josexd96@gmail.com>
+Date:   Tue May 26 23:08:12 2026 -0600
+
+    Uploading first exercises
+
+#Repository release 
+commit b2b2798b7610f598f9b9a5004b0d84a6659b17fe (origin/main, origin/HEAD, main)
+Author: Jose Herrera <josexd96@gmail.com>
+Date:   Mon May 25 20:29:50 2026 -0600
+
+    Initial commit
