@@ -7,14 +7,14 @@ class Animal:
         print("make a sound.")
 
 
-class Dog:
+class Dog(Animal):
     def __init__(self, name, age):
         super().__init__(name, age)
     
     def speak(self):
         print("Guau!")
 
-class Cat:
+class Cat(Animal):
     def __init__(self, name, age):
         super().__init__(name, age)
     
