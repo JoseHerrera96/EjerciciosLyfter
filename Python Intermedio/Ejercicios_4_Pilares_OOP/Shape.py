@@ -1,4 +1,6 @@
-class Shape:
+from abc import abstractmethod, ABC
+
+class Shape(ABC):
     
     def __init__(self):
         pass
