@@ -8,7 +8,7 @@ class User(ABC):
     def has_permission(self, permission):
         pass
    
-class  AdminUser(User):
+class AdminUser(User):
     def get_role(self):
         return "admin"
     def has_permission(self, permission):
