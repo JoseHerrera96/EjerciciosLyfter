@@ -7,7 +7,7 @@ class SavingsAccount(BankAccount):
     
     def withdraw(self, amount):
         if amount <= self.get_balance() - self._min_balance:
-            withdraw = self.withdraw(amount)
+            withdraw = super().withdraw(amount)
             return  withdraw
         else:
             return "Insufficient funds"
