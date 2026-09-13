@@ -1,4 +1,5 @@
 from datetime import date
+from functools import wraps
 
 class User:
     date_of_birth: date
@@ -13,6 +14,7 @@ class User:
             ((today.month, today.day)< (self.date_of_birth.month, self.date_of_birth.day)))
 
 def underage_test_decorator(func):
+    @wraps(func)
     def wrapper(user, *args, **kwargs):
         if user.age < 18:
             raise ValueError("User is underage")
