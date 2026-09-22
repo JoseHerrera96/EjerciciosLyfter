@@ -16,13 +16,6 @@ class BinaryTree:
             self.head = new_node
         else:
             self.left = new_node
-
-    def search(self, value):
-        if self.is_empty():
-            return None
-        if self.head.data == value:
-            return self.head.data
-        return self.search(self.left.data) or self.search(self.right.data)
     
     def is_empty(self):
         return self.head is None

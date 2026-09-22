@@ -10,6 +10,10 @@ class DoubleEndedQueue:
 
     def push_front(self, value):
         new_node = Node(value)
+        if self.is_empty():
+            self.head = new_node
+            self.tail = new_node
+            return
         new_node.next = self.head
         self.head = new_node
 
