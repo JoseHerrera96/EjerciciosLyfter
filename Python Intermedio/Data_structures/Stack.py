@@ -9,17 +9,19 @@ class Stack:
     def push(self, value):
         if self.is_empty():
             self.top = Node(value)
-            return
-        new_node = Node(value)
-        new_node.next = self.top
-        self.top = new_node
+        else:
+            new_node = Node(value)
+            new_node.next = self.top
+            self.top = new_node
+
 
     def pop(self):
         if self.is_empty():
             return None
-        popped_node = self.top
-        self.top = self.top.next
-        return popped_node.data
+        else:
+            popped_node = self.top
+            self.top = self.top.next
+            return popped_node.data
 
     def print_structure(self):
         current_node = self.top
