@@ -1,5 +1,4 @@
 class Node:
-    data: str
     next: "Node"
 
     def __init__(self, data, next=None):
@@ -10,17 +9,24 @@ class Node:
 class Queue:
     head: Node
 
-    def __init__(self, head):
-        self.head = head
+    def __init__(self, head=None):
+        self.head = head # type: ignore
 
-    def print_structure(self):
+    def print_all(self):
         current_node = self.head
 
         while current_node is not None:
             print(current_node.data)
+            if current_node.next is not None:
+                print("->", end=" ")
             current_node = current_node.next
 
-    def enqueue(self, new_node):
+    def enqueue(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+
         current_node = self.head
 
         while current_node.next is not None:
@@ -30,4 +36,7 @@ class Queue:
 
     def dequeue(self):
         if self.head:
+            dequeued_data = self.head.data
             self.head = self.head.next
+            return dequeued_data
+        return None

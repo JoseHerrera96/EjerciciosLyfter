@@ -1,22 +1,21 @@
 class Node:
-    data: str
     next: "Node"
     prev: "Node"
 
     def __init__(self, data, next=None, prev=None):
         self.data = data
-        self.next = next
-        self.prev = prev
+        self.next = next # type: ignore
+        self.prev = prev # type: ignore
 
 class DoubleLinkedList:
     head: Node
     tail: Node
 
     def __init__(self, head=None, tail=None):
-        self.head = head
-        self.tail = tail
+        self.head = head # type: ignore
+        self.tail = tail # type: ignore
     
-    def append(self, value):
+    def prepend(self, value):
         new_node = Node(value)
         if self.is_empty():
             self.head = new_node
@@ -26,32 +25,35 @@ class DoubleLinkedList:
             self.head.prev = new_node
             self.head = new_node
 
-    def prepend(self):
+    def append(self, value):
+        new_node = Node(value)
         if self.is_empty():
-            return None
-        popped_node = self.head
-        if self.head == self.tail:      # Solo queda 1 elemento
-            self.head = None
-            self.tail = None
+            self.head = new_node
+            self.tail = new_node
         else:
-            self.head = self.head.next
-            self.head.prev = None
-        return popped_node.data
+            self.tail.next = new_node
+            new_node.prev = self.tail
+            self.tail = new_node
     
     def delete(self,data):
         if self.is_empty():
             return None
-        
+                
         current_node = self.head
         
         while current_node is not None:
             if current_node.data == data:
+                if self.head == self.tail:
+                    self.head = None # type: ignore
+                    self.tail = None # type: ignore
+                    return
+                
                 if current_node == self.head:
                     self.head = current_node.next
-                    self.head.prev = None
+                    self.head.prev = None # type: ignore
                 elif current_node == self.tail:
                     self.tail = current_node.prev
-                    self.tail.next = None
+                    self.tail.next = None # type: ignore
                 else:
                     current_node.prev.next = current_node.next
                     current_node.next.prev = current_node.prev
@@ -64,6 +66,8 @@ class DoubleLinkedList:
 
         while current_node is not None:
             print(current_node.data)
+            if current_node.next is not None:
+                print("->", end=" ")
             current_node = current_node.next
 
     def print_backward(self):
@@ -71,6 +75,8 @@ class DoubleLinkedList:
 
         while current_node is not None:
             print(current_node.data)
+            if current_node.prev is not None:
+                print("<-", end=" ")
             current_node = current_node.prev
 
     def is_empty(self):
