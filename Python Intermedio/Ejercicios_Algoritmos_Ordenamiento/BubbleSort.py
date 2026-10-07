@@ -7,6 +7,7 @@ def bubble_sort(list):
                 sorted_list[j], sorted_list[j+1] = sorted_list[j+1], sorted_list[j]
     return sorted_list
 
+# Decorator to control the sorting direction of the bubble sort function
 def BubbleSort_control(Bias: bool):
     def decorator(func):
         def wrapper(*args, **kwargs):
