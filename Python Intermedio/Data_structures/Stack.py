@@ -4,7 +4,7 @@ class Stack:
     top: Node
 
     def __init__(self, head=None):
-        self.top = head
+        self.top = head # type: ignore
     
     def push(self, value):
         if self.is_empty():
@@ -20,7 +20,7 @@ class Stack:
             return None
         else:
             popped_node = self.top
-            self.top = self.top.next
+            self.top = self.top.next # type: ignore
             return popped_node.data
 
     def print_structure(self):
