@@ -1,4 +1,4 @@
-def bubble_sort_reverse_bias(list):
+def reverse_bubble_sort(list):
         sorted_list = list.copy()
         n = len(sorted_list)
         for i in range(n, 0, -1):
