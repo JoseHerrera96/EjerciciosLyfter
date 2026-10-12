@@ -1,9 +1,9 @@
 def reverse_bubble_sort(list):
         sorted_list = list.copy()
         n = len(sorted_list)
-        for i in range(0, n, 1):
+        for i in range(0, n-1, 1):
             swapped = False
-            for j in range(n-i,0,-1):
+            for j in range(n-i-1,0,-1):
                 if sorted_list[j] < sorted_list[j-1]:
                     sorted_list[j], sorted_list[j-1] = sorted_list[j-1], sorted_list[j]
                     swapped = True
