@@ -22,40 +22,42 @@ def BubbleSort(list):
         return list
 
 
-def leftist_node(tree: BinaryTree):
-    if tree is None or tree.root is None:
-        return None
-    node = tree.root
-    while node.left is not None:
-        node = node.left
-    return node
+
+def _insert_bst_value(tree: BinaryTree, value):
+    if tree.is_empty():
+        tree.insert_left(value)
+        return
+
+    current = tree.root
+    while True:
+        if value <= current.data:
+            if current.left is None:
+                tree.insert_left(value, current)
+                return
+            current = current.left
+        else:
+            if current.right is None:
+                tree.insert_right(value, current)
+                return
+            current = current.right
+
+
+def _insert_tree_values(sorted_tree: BinaryTree, node):
+    if node is None:
+        return
+    _insert_bst_value(sorted_tree, node.data)
+    _insert_tree_values(sorted_tree, node.left)
+    _insert_tree_values(sorted_tree, node.right)
+
 
 def BubbleSort_BinaryTree(tree: BinaryTree):
     if tree is None or tree.is_empty():
         return tree
 
-    nodes = []
-
-    def collect_in_order(node):
-        if node is None:
-            return
-        collect_in_order(node.left)
-        nodes.append(node)
-        collect_in_order(node.right)
-
-    collect_in_order(tree.root)
-
-    swapped = True
-    while swapped:
-        swapped = False
-        for index in range(len(nodes) - 1):
-            if nodes[index].data > nodes[index + 1].data:
-                nodes[index].data, nodes[index + 1].data = (
-                    nodes[index + 1].data,
-                    nodes[index].data,
-                )
-                swapped = True
-
+    sorted_tree = BinaryTree()
+    _insert_tree_values(sorted_tree, tree.root)
+    tree.root = sorted_tree.root
+    tree.level = sorted_tree.level
     return tree
 
 def BubbleSort_DoubleEndedQueue(deque: DoubleEndedQueue):
