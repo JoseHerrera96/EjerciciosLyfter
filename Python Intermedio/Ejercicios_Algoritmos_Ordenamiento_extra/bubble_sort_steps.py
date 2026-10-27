@@ -4,6 +4,7 @@ def bubble_sort_steps(lst):
     sorted_list = lst.copy()
     n = len(sorted_list)
     for i in range(n):
+        iterations += 1
         swapped = False
         for j in range(0, n-i-1):
             if sorted_list[j] > sorted_list[j+1]:
@@ -12,7 +13,6 @@ def bubble_sort_steps(lst):
                 swaps += 1
         if not swapped:
             break
-        iterations += 1
     print(f"Sorted list: {sorted_list}")
     print(f"Iterations: {iterations}")
     print(f"Swaps: {swaps}")
