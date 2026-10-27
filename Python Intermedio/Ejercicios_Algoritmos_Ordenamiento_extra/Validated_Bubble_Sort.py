@@ -4,7 +4,7 @@ def Validated_Bubble_Sort(list):
         return False
     #validate that list are numbers
     for item in list:
-        if not isinstance(item, (int, float)):
+        if not isinstance(item, (int, float)) or isinstance(item, bool):
             print(f"Invalid item in list: {item}. List must contain only numbers.")
             return False
     if len(list) >= 2:
