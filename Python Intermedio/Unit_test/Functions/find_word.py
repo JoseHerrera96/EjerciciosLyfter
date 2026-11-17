@@ -17,9 +17,10 @@ def find_word(text: str, word: str) -> int:
     counter = len(indices)
     return counter
 
-print(" ")
-text = "Hello world, welcome to the world of Python programming."
-word = "world"
-count = find_word(text, word)
-print("text: " + text)
-print(f"The word '{word}' occurs {count} times in the given text.")
+if __name__ == "__main__":
+    print(" ")
+    text = "Hello world, welcome to the world of Python programming."
+    word = "world"
+    count = find_word(text, word)
+    print("text: " + text)
+    print(f"The word '{word}' occurs {count} times in the given text.")

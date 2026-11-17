@@ -14,8 +14,9 @@ def find_prime(numbers: list[int]) -> list[int]:
             primes.append(num)
     return primes
 
-print(" ")
-input_numbers = [10, 15, 3, 7, 19, 22, 29, 4]
-prime_numbers = find_prime(input_numbers)
-print(f"Original numbers: {input_numbers}")
-print(f"Prime numbers: {prime_numbers}")
+if __name__ == "__main__":
+    print(" ")
+    input_numbers = [10, 15, 3, 7, 19, 22, 29, 4]
+    prime_numbers = find_prime(input_numbers)
+    print(f"Original numbers: {input_numbers}")
+    print(f"Prime numbers: {prime_numbers}")

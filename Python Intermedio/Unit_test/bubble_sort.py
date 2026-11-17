@@ -1,5 +1,7 @@
-def bubble_sort(list):
-    sorted_list = list.copy()
+def bubble_sort(unsort_list):
+    if not isinstance(unsort_list, list):
+        raise AttributeError("Input must be a list")
+    sorted_list = unsort_list.copy()
     n = len(sorted_list)
     for i in range(n):
         swapped = False

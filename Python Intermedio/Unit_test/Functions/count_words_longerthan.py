@@ -16,10 +16,11 @@ def count_letters(words: list[str], n: int) -> list[str]:
 
     return result
 
-print(" ")
-words = ["Azucar", "Banana", "Cereza", "Dátil", "Elderberry", "Higo", "Uva", "Manzana", "Naranja", "Papaya", "Quince", "Frambuesa", "Fresa", "Tamarindo", "Mango", "Melocotón", "Pera", "Piña", "Ciruela", "Sandía"]
-n = 4
-print("words: " + str(words))
-print("n: " + str(n))
-result = count_letters(words, n)
-print(f"Words that have more than {n} letters: \n{result}")
+if __name__ == "__main__":
+    print(" ")
+    words = ["Azucar", "Banana", "Cereza", "Dátil", "Elderberry", "Higo", "Uva", "Manzana", "Naranja", "Papaya", "Quince", "Frambuesa", "Fresa", "Tamarindo", "Mango", "Melocotón", "Pera", "Piña", "Ciruela", "Sandía"]
+    n = 4
+    print("words: " + str(words))
+    print("n: " + str(n))
+    result = count_letters(words, n)
+    print(f"Words that have more than {n} letters: \n{result}")

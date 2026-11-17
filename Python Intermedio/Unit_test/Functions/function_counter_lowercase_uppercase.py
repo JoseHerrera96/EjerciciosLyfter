@@ -8,8 +8,9 @@ def counter_lowercase_uppercase(text: str) -> tuple[int, int]:
             upper_count += 1
     return lower_count, upper_count
 
-print(" ")
-sample_text = "Hello World!"
-lower, upper = counter_lowercase_uppercase(sample_text)
-print(f"In the text: '{sample_text}'")
-print(f"Lowercase letters: {lower}, Uppercase letters: {upper}")
+if __name__ == "__main__":
+    print(" ")
+    sample_text = "Hello World!"
+    lower, upper = counter_lowercase_uppercase(sample_text)
+    print(f"In the text: '{sample_text}'")
+    print(f"Lowercase letters: {lower}, Uppercase letters: {upper}")

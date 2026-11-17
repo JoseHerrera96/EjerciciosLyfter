@@ -14,8 +14,9 @@ def count_vowels(text: str) -> int:
             count += 1
     return count
 
-print(" ")
-text = "Hello world, welcome to the world of Python programming."
-vowel_count = count_vowels(text)
-print("text: " + text)
-print(f"The number of vowels in the text is: {vowel_count}")
+if __name__ == "__main__":
+    print(" ")
+    text = "Hello world, welcome to the world of Python programming."
+    vowel_count = count_vowels(text)
+    print("text: " + text)
+    print(f"The number of vowels in the text is: {vowel_count}")
